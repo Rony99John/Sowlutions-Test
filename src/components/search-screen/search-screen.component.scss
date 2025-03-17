@@ -7,19 +7,24 @@
 }
 
 .post-card {
+  width: 80%;
 }
 
 .post-header {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: math;
+  margin-bottom: 0;
 }
 
 .post-date {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
+  margin-top: 0;
 }
 
 .post-body {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 mark {

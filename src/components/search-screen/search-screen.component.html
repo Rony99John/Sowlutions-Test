@@ -1,3 +1,4 @@
+<legend class="post-header">Search</legend>
 <div>
   <input
     type="text"
@@ -6,10 +7,13 @@
     class="search-input"
   />
 </div>
+<p style="margin-top: 0; font-size: 18px">
+  <strong>{{ filteredPosts.length }} Posts </strong>were found
+</p>
 
 <div *ngFor="let post of filteredPosts" class="post-card">
   <h2 class="post-header" [innerHTML]="highlightText(post.title)"></h2>
-  <p class="post-date"><strong>Date:</strong> {{ post.date }}</p>
+  <p class="post-date">{{ post.date }}</p>
   <p class="post-body" [innerHTML]="highlightText(post.textBody)"></p>
   <hr />
 </div>
