@@ -1,0 +1,33 @@
+.search-input {
+  padding: 8px;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-card {
+  width: 80%;
+}
+
+.post-header {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: math;
+  margin-bottom: 0;
+}
+
+.post-date {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.post-body {
+  font-size: 18px;
+}
+
+mark {
+  background-color: yellow;
+  font-weight: bold;
+}
