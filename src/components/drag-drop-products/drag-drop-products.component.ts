@@ -17,7 +17,7 @@ export class DragDropProductsComponent implements OnInit {
       .pipe()
       .subscribe((response) => {
         this.myProducts = response;
-        console.log(response);
+        // console.log(response);
       });
   }
 
