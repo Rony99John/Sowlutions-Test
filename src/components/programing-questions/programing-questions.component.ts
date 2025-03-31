@@ -15,14 +15,17 @@ export class ProgramingQuestionsComponent implements OnInit {
     // console.log(this.validateEmail('john.doe@gmail.com'));
     // console.log(this.validateEmail('john@doe@gmail.com'));
     // console.log(this.validateEmail('john@gmail.fc'));
-    // this.initializeList([1, 8, 56, 87, 5, 4, 81]);
-    // console.log(this.getModifiedList(57));
-    // console.log(this.isValidBracketSequence('()[]{}'));
-    // console.log(this.isValidBracketSequence('([{}])'));
-    // console.log(this.isValidBracketSequence('('));
-    // console.log(this.isValidBracketSequence('[(])'));
-    // console.log(this.isValidBracketSequence('{[]}]'));
+    // console.log(this.validateEmail(' johngmail.fc'));
+    // console.log(this.validateEmail('john@gmail.fc '));
+    // console.log(this.validateEmail('john@gmail.fc.'));
     // this.readCsvData('Hearts', 'Lion', 'Mango');
+    // this.initializeList([1, 8, 56, 87, 5, 4, 81]);
+    // console.log(this.getModifiedList(0));
+    console.log(this.isValidBracketSequence('()[ ]{}'));
+    console.log(this.isValidBracketSequence('([{}])'));
+    console.log(this.isValidBracketSequence('('));
+    console.log(this.isValidBracketSequence('[(])'));
+    console.log(this.isValidBracketSequence('{[]} ]'));
   }
 
   // problem 1 Fns and solution
@@ -145,7 +148,7 @@ export class ProgramingQuestionsComponent implements OnInit {
 
   // problem 4 Fns and solution
   isValidBracketSequence(bracketsStr: string) {
-    debugger;
+    // debugger;
     let bracketMap = { ')': '(', '}': '{', ']': '[' };
     let bracketSequence = [];
     // remove all whiteSpaces from the input, then generating an array of chars from it
