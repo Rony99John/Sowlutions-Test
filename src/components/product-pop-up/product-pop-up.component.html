@@ -1,0 +1,19 @@
+<h1 class="title">
+  {{ this.data.title }}
+</h1>
+
+<div class="popUp">
+  <img src="{{ this.data.image }}" loading="lazy" />
+  <div class="product-text">
+    <p style="font-size: 28px; color: grey; font-weight: bold">
+      {{ this.data.category }}
+    </p>
+    <p
+      style="font-size: 22px; color: grey; font-weight: bold; padding-top: 15px"
+    >
+      Price:
+      {{ this.data.price }} $ / Rate:
+      {{ this.data.rating.rate }}
+    </p>
+  </div>
+</div>

@@ -13,7 +13,9 @@
 
 <div *ngFor="let post of filteredPosts" class="post-card">
   <h2 class="post-header" [innerHTML]="highlightText(post.title)"></h2>
-  <p class="post-date">{{ post.date }}</p>
+  <p class="post-date" [innerHTML]="highlightText(post.date)">
+    {{ post.date }}
+  </p>
   <p class="post-body" [innerHTML]="highlightText(post.textBody)"></p>
   <hr />
 </div>
